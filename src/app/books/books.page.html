@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Best-Sellers
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="primary">
+  <ion-card>
+    <ion-card-content>
+      <p>
+        New York Times Best-Sellers
+      </p>
+      <ion-spinner *ngIf="!books"  name="dots"></ion-spinner>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card *ngFor="let book of books">
+    <ion-card-content>
+      <div>
+      <img [src]= "book.book_image" *ngIf= "book.book_image != 'N/A'" alt="Book Cover">
+    
+    <ion-card-title>
+      <ion-label text-wrap>
+        <h3>{{ book.title }}</h3>
+        {{ book.author }}
+      </ion-label>
+      <ion-text>
+      </ion-text>
+    </ion-card-title>
+    {{ book.description }}
+    <ion-button size="default" color="dark" expand="full" [href]= "book.amazon_product_url">Want to Buy?</ion-button>
+    </div>
+  </ion-card-content>
+</ion-card>
