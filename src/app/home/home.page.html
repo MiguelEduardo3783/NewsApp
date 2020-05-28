@@ -22,7 +22,7 @@
       </ion-card-content>
     </ion-card>
     <ion-card *ngFor="let article of articles" class="ion-no-margin">
-      <ion-img src="{{article.urlToImage}}" style="max-width:500px; max-height:200px; display:inline-flex"></ion-img>
+      <ion-img src="{{article?.urlToImage}}" style="max-width:500px; max-height:200px; display:inline-flex"></ion-img>
       <ion-card-header>
         <ion-card-subtitle>{{article.title}}</ion-card-subtitle>
       </ion-card-header>
@@ -33,9 +33,9 @@
         <p>
         {{ article.author }}
         </p>
-        <ion-button ion-button fill="outline" href="{{article.url}}" large>Read full article</ion-button>
-
+        <ion-button ion-button fill="outline" href="{{article.url}}" large target="_blank">Read full article</ion-button>
       </ion-card-content>
     </ion-card>
+    <br>
 </ion-content>
 

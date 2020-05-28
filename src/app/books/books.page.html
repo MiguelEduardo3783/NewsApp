@@ -26,14 +26,14 @@
     
     <ion-card-title>
       <ion-label text-wrap>
-        <h3>{{ book.title }}</h3>
-        {{ book.author }}
+        <h1>{{ book.title }}</h1>
+        <h2>{{ book.author }}</h2>
       </ion-label>
-      <ion-text>
-      </ion-text>
     </ion-card-title>
-    {{ book.description }}
-    <ion-button size="default" color="dark" expand="full" [href]= "book.amazon_product_url">Want to Buy?</ion-button>
+    <ion-text>
+      {{ book.description }}
+    </ion-text>
+    <ion-button size="default" color="dark" expand="full" [href]= "book.amazon_product_url" target="_blank">Want to Buy?</ion-button>
     </div>
   </ion-card-content>
 </ion-card>

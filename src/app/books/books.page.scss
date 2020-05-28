@@ -6,7 +6,9 @@ ion-card{
 ion-toolbar {
   --background: #ee3434;
 }
-
+ion-card-title {
+  --color: #fff;
+}
 ion-content {
   --background: #c1c3cf;
 }
