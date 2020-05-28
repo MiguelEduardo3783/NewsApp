@@ -1,4 +1,18 @@
 ion-card{
-    --background: #021b46;
-    --color: #fff;
-  }
+  --background: #021b46;
+  --color: #fff;
+}
+
+ion-toolbar {
+  --background: #ee3434;
+}
+
+ion-content {
+  --background: #c1c3cf;
+}
+
+ion-button {
+  --background: #fff;
+  --border-radius: 0;
+  --border-style: none;
+}

@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar color="primary">
+  <ion-toolbar>
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
@@ -9,7 +9,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content color="primary">
+<ion-content>
   <ion-card>
     <ion-card-content>
       <p>
@@ -19,7 +19,7 @@
     </ion-card-content>
   </ion-card>
 
-  <ion-card *ngFor="let book of books">
+  <ion-card *ngFor="let book of books" class="ion-no-margin">
     <ion-card-content>
       <div>
       <img [src]= "book.book_image" *ngIf= "book.book_image != 'N/A'" alt="Book Cover">
